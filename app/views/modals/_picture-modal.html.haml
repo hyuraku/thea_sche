@@ -1,0 +1,14 @@
+.modal.fade#picture-modal{ "aria-hidden": true, "aria-labelledby": "picture-modal-label" }
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button" }
+          %span{ "aria-hidden": true } ×
+      .modal-body
+        - @works.each do |work|
+          .card{'v-on:click': "setWorkInfo(#{work.id})"}
+            .card__body
+              = simple_format(work.name)
+      .modal-footer
+        %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
+        -# %button.btn.btn-primary{ type: "button" } Search
