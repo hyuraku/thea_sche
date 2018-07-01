@@ -1,0 +1,156 @@
+*:focus {
+outline: none;
+}
+
+// 全体、フォントの設定のみ
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+// ヘッダーの設定
+header {
+  height: calc(60px * 2);
+  background-color: rgb(221, 130, 106);
+  font-size: 57px;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+.no-padding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row-fix-margin{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+// 選択画面
+.choise {
+  height: calc(60px * 2);
+  background-color: rgba(29, 60, 108, 0);
+
+  &__one {
+    background-color: rgb(217, 130, 142);
+    height: -webkit-fill-available;
+    display: inline-flex;
+    border: 0px;
+
+    &__icon {
+      padding: 10px 0;
+      text-align: right;
+    }
+
+    &__letter {
+      font-size: 30px;
+    }
+  }
+
+  &__two {
+    background-color: rgb(214, 71, 90);
+    height: -webkit-fill-available;
+    display: inline-flex;
+    border: 0px;
+
+    &__icon {
+      padding: 10px 0;
+      text-align: right;
+    }
+
+    &__letter {
+      font-size: 30px;
+    }
+  }
+}
+
+// 選択画面のアイコンと文字の設定
+.icon_size {
+  font-size: 100px;
+}
+
+.order_size {
+  font-size: 60px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    &__body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+}
+// 検索結果
+.result {
+  background-color: rgb(217, 156, 164);
+  padding-top: 100px;
+  position: relative;
+  overflow: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  &__row {
+    margin: auto;
+  }
+
+  &__first{
+    height: 365px;
+  }
+
+  &__one {
+    // height: 130px;
+    margin-bottom: 5px;
+
+    &__border {
+      // border: solid;
+      height: calc(50px * 1.5);
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .result {
+    background-color: rgb(217, 156, 164);
+    padding-top: 100px;
+    position: relative;
+    // overflow: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    &__row {
+      margin: auto;
+    }
+
+    &__one {
+      // height: 130px;
+      margin-bottom: 5px;
+
+      &__border {
+        // border: solid;
+        height: calc(50px * 1.5);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(226, 105, 138);
+  margin-bottom: 0;
+  font-size: 20px;
+  position: relative;
+  height: 100px;
+  padding: 40px 0;
+}
