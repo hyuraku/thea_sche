@@ -60,3 +60,6 @@ gem 'webpacker', github: 'rails/webpacker'
 gem 'haml-rails'
 
 gem 'mysql2'
+
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
