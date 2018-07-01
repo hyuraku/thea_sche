@@ -5,10 +5,10 @@ class ScheduleController < ApplicationController
     works_id = []
     #ハッシュ作って格納しましょう
     for schedule in Schedule.all do
-      works_id.push(schedule.work.id)
+      works_id.push(schedule.picture.id)
     end
     works_id = (works_id.uniq).sort
-    @works=Work.where(id: works_id).order('name ASC')
+    @works=Picture.where(id: works_id).order('name ASC')
     #@schedule単体のwork.nameを列に投入
     #重複分は消して並び替えて表示させる
     @dates=[]
