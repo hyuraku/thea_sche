@@ -107,7 +107,8 @@ header {
   }
 
   &__first{
-    height: 365px;
+    // height: 365px;
+    height: calc(100vh - 340px);
   }
 
   &__one {
