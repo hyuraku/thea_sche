@@ -6,19 +6,19 @@
         .result__first{ 'v-show': 'scheduleTopBool'}
         .list-group-item.result__one{ 'v-show': 'scheduleInfoBool','v-for': 'schedule in scheduleInfo' }
           .row
-            .col-md-2.col-xs-6.result__one__border
+            .col-6.col-md-2.result__one__border
               {{schedule.schedule_day}}
-            .col-md-4.col-xs-6.result__one__border
+            .col-6.col-md-4.result__one__border
               {{schedule.theater_name}}
-            .col-md-6.col-xs-12.result__one__border
+            .col-12.col-md-6.result__one__border
               {{schedule.work_name}}
           .row
-            .col-md-2.col-xs-6.result__one__border
+            .col-6.col-md-2.result__one__border
               {{schedule.screen_name}}
-            .col-md-2.col-xs-6.result__one__border
+            .col-6.col-md-2.result__one__border
               {{schedule.work_minutes}}
-            .col-md-4.col-xs-6.result__one__border
+            .col-6.col-md-4.result__one__border
               {{schedule.start_time}}
-            .col-md-4.col-xs-6.result__one__border
+            .col-6.col-md-4.result__one__border
               {{schedule.end_time}}
     .col-md-1
