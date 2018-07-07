@@ -8,7 +8,7 @@ class ScheduleController < ApplicationController
       works_id.push(schedule.picture.id)
     end
     works_id = (works_id.uniq).sort
-    @works=Picture.where(id: works_id).order('name ASC')
+    @pictures=Picture.where(id: works_id).order('name ASC')
     #@schedule単体のwork.nameを列に投入
     #重複分は消して並び替えて表示させる
     @dates=[]
