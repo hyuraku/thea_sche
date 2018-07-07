@@ -64,6 +64,10 @@ header {
   }
 }
 
+.card:hover{
+  background-color: rgb(224, 116, 174);
+}
+
 // 選択画面のアイコンと文字の設定
 .icon_size {
   font-size: 100px;
