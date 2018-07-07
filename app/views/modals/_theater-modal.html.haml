@@ -7,7 +7,7 @@
       .modal-body
         - @theaters.each do |theater|
           .card{'v-on:click': "setTheaterInfo(#{theater.id})"}
-            .card__body
+            .card-body
               = simple_format(theater.name)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close

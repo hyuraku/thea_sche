@@ -8,7 +8,7 @@
       .modal-body
         - @dates.each_with_index do |date,i|
           .card{"id": i,'v-on:click': "setDateInfo(#{i})"}
-            .card__body
+            .card-body
               = date
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
