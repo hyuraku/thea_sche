@@ -7,8 +7,8 @@ Rails.application.routes.draw do
    resources :schedules
    # get "schedules/show/:theater_id/:picture_id/" => "schedules#show"
 
-   get "schedules/get/:id/" => "schedules#get"
-   get "schedules/show/:theater_id/" => "schedules#show"
+   get "schedules/get/:id/" => "schedules#index"
+   get "schedules/show/:theater_id/" => "schedules#index"
    get "schedules/index/:picture_id/" => "schedules#index"
 
    get "schedules/get_date_thea/:id/:theater_id" => "schedules#get_date_thea"
