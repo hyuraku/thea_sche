@@ -7,7 +7,7 @@
       .modal-body
         - @works.each do |work|
           .card{'v-on:click': "setWorkInfo(#{work.id})"}
-            .card__body
+            .card-body
               = simple_format(work.name)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
