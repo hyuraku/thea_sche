@@ -5,10 +5,10 @@
         %button.close{ "aria-label": "Close", "data-dismiss": "modal", type: "button" }
           %span{ "aria-hidden": true } ×
       .modal-body
-        - @works.each do |work|
-          .card{'v-on:click': "setWorkInfo(#{work.id})"}
+        - @pictures.each do |picture|
+          .card{'v-on:click': "setPictureInfo(#{picture.id})"}
             .card-body
-              = simple_format(work.name)
+              = simple_format(picture.name)
       .modal-footer
         %button.btn.btn-secondary{ "data-dismiss": "modal", type: "button" } Close
         -# %button.btn.btn-primary{ type: "button" } Search
