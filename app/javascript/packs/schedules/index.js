@@ -1,6 +1,7 @@
 import Vue from 'vue/dist/vue.esm';
 import axios from 'axios';
-
+import 'babel-polyfill' ;
+import * as itertools from '@aureooms/js-itertools' ;
 // 作品のIDのリスト
 // 劇場のIDのリスト
 var theater_id_list = []
