@@ -32,7 +32,6 @@ window.onload = function() {
     methods: {
       setDateInfo(id) {
         operate_list(id,date_id_list)
-
         axios.get(`api/schedules/get/${id}`)
           .then(res => {
             this.scheduleInfo = res.data;
