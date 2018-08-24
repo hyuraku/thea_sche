@@ -2,6 +2,7 @@
   "name": "thea_sche",
   "private": true,
   "dependencies": {
+    "@aureooms/js-itertools": "^3.4.0",
     "@babel/core": "^7.0.0-beta.51",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",

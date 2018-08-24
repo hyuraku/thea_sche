@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@aureooms/js-collections-deque@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-collections-deque/-/js-collections-deque-3.1.0.tgz#2df0f28883f1367c979232d8c3964aede93d2ded"
+  dependencies:
+    "@aureooms/js-error" "^3.0.0"
+
+"@aureooms/js-error@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-error/-/js-error-3.0.0.tgz#c06a455569c4cb26c3792ab9c9f075da707823de"
+
+"@aureooms/js-itertools@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-itertools/-/js-itertools-3.4.0.tgz#2140cd62e5ae706402afef2e82f924658e0403e2"
+  dependencies:
+    "@aureooms/js-collections-deque" "^3.1.0"
+
 "@babel/code-frame@7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.51.tgz#bd71d9b192af978df915829d39d4094456439a0c"
