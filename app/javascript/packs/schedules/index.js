@@ -17,9 +17,9 @@ function operate_list(id,list) {
 }
 
 // 2つ以上のを回す
-function list_length_check(a_list,b_list,c_lict) {
-  pass
-}
+// function list_length_check(a_list,b_list,c_lict) {
+//   pass
+// }
 
 window.onload = function() {
   var theaterIndex = new Vue({
