@@ -66,3 +66,7 @@ gem 'jquery-rails'
 
 gem 'material_icons'
 gem 'materialize-sass'
+
+gem 'kaminari'
+
+gem 'bullet'

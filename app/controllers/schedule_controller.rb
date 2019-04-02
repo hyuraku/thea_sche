@@ -4,7 +4,7 @@ class ScheduleController < ApplicationController
     @theaters = Theater.all
     works_id = []
     #ハッシュ作って格納しましょう
-    for schedule in Schedule.all.includes(:picture) do
+    for schedule in Schedule.all do
       works_id.push(schedule.picture.id)
     end
     works_id = (works_id.uniq).sort
